@@ -1,0 +1,156 @@
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  background-color: #FFF;
+}
+
+.homepage {
+  color: #FFF;
+  background-color: #000;
+}
+
+@media screen and (min-width: 1920px) {
+  .homepage {
+    background: #000 -35px 190px url("../images/ornament.png") no-repeat;
+  }
+}
+
+h1, h2, h3, span, .highlighted {
+  font-family: "Roboto Serif", serif;
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+header .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+header img {
+  width: 40px;
+}
+
+header .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+header a {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #000;
+}
+
+header span {
+  font-size: 30px;
+}
+
+header .contact-button {
+  max-width: 140px;
+}
+
+button {
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 18px;
+  height: 50px;
+}
+
+.hero {
+  display: flex;
+  max-width: 1400px;
+  margin-inline: 55px;
+  margin-top: 140px;
+}
+
+.hero .hero-text {
+  max-width: 840px;
+  position: relative
+}
+
+.hero-text p {
+  margin-top: 25px;
+  max-width: 550px;
+}
+
+.hero-text button {
+  margin-top: 30px;
+}
+
+.hero-text .highlighted {
+  margin-top: 180px;
+  font-size: 20px;
+  color: #64CCC5;
+}
+
+.hero h2 {
+  font-size: 64px;
+  max-width: 660px;
+}
+
+.hero span {
+  color: #64CCC5;
+}
+
+.hero .partner-brands {
+  /* min-width: 700px; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  position: absolute;
+  left: -15px;
+}
+
+.with-icon {
+  padding-left: 40px;
+  position: relative;
+}
+
+.with-icon::before {
+  content: "";
+  background: url("../images/button-arrow.png");
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-size: 25px;
+}
+
+.hero-image {
+  width: 850px;
+  background: center center url("../images/home/circle1.svg") no-repeat;
+}
+
+.hero-image img {
+  width: 550px;
+  display: block;
+  margin: 0 auto;
+}
