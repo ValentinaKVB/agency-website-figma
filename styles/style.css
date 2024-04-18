@@ -21,12 +21,12 @@ body {
 
 .homepage {
   color: #FFF;
-  background-color: #000;
+  background: url("../images/home/texture.png") top left/cover no-repeat, #000;
 }
 
 @media screen and (min-width: 1920px) {
   .homepage {
-    background: #000 -35px 190px url("../images/ornament.png") no-repeat;
+    background: url("../images/ornament.png") -35px 190px no-repeat, #000;
   }
 }
 
@@ -85,8 +85,8 @@ button {
 .hero {
   display: flex;
   max-width: 1400px;
-  margin-inline: 55px;
-  margin-top: 140px;
+  margin: 140px auto 0 auto;
+  padding: 0 35px 50px 35px;
 }
 
 .hero .hero-text {
@@ -119,11 +119,10 @@ button {
 }
 
 .hero .partner-brands {
-  /* min-width: 700px; */
+  margin-top: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* flex-wrap: wrap; */
   position: absolute;
   left: -15px;
 }
@@ -145,12 +144,15 @@ button {
 }
 
 .hero-image {
+  margin-top: -140px;
   width: 850px;
-  background: center center url("../images/home/circle1.svg") no-repeat;
-}
-
-.hero-image img {
-  width: 550px;
-  display: block;
-  margin: 0 auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-image: url("../images/home/eclipse10.png"), 
+                    url("../images/home/circle1.svg"),
+                    url("../images//home/circle2.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 70%, 85%, 100%;
+  filter: drop-shadow(0 0 200px #43bfb3f7);
 }
