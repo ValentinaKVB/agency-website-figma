@@ -28,6 +28,10 @@ body > * {
   background: url("../images/home/texture.png") top left/cover no-repeat, #000;
 }
 
+section {
+  padding: 100px 50px;
+}
+
 section:not(.hero) {
   color: #000;
   background-color: #FFF;
@@ -39,9 +43,22 @@ section:not(.hero) {
   }
 }
 
-h1, h2, h3, span, .highlighted {
+h1, h2, h3, h4, span, .highlighted {
   font-family: "Roboto Serif", serif;
   font-weight: 600;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.centered {
+  text-align: center;
 }
 
 header {
@@ -95,7 +112,7 @@ button {
   display: flex;
   max-width: 1400px;
   margin: 140px auto 0 auto;
-  padding: 0 35px 50px 35px;
+  padding: 0 50px 120px 50px;
 }
 
 .hero .hero-text {
@@ -112,19 +129,18 @@ button {
   margin-top: 30px;
 }
 
-.hero-text .highlighted {
+.highlighted {
+  color: #64CCC5;
+}
+
+.hero-text p.highlighted {
   margin-top: 180px;
   font-size: 20px;
-  color: #64CCC5;
 }
 
 .hero h2 {
   font-size: 64px;
   max-width: 660px;
-}
-
-.hero span {
-  color: #64CCC5;
 }
 
 .hero .partner-brands {
@@ -164,4 +180,37 @@ button {
   background-repeat: no-repeat;
   background-size: 70%, 85%, 100%;
   filter: drop-shadow(0 0 400px #d7dfdeb3);
+}
+
+.card-container {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  gap: 60px;
+  justify-content: center;
+}
+
+.card {
+  /* max-width: 420px; */
+  background-color: #F4F4F4;
+  border-radius: 20px;
+  padding: 45px;
+}
+
+h4 {
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #000;
+  text-align: center;
+}
+
+.icon svg {
+  padding-top: 25px;
+  color: #FFF;
 }
