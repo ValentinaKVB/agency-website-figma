@@ -15,13 +15,22 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: #000;
-  background-color: #FFF;
+  /* color: #000;
+  background-color: #FFF; */
+}
+
+body > * {
+  margin: 0 auto;
 }
 
 .homepage {
   color: #FFF;
   background: url("../images/home/texture.png") top left/cover no-repeat, #000;
+}
+
+section:not(.hero) {
+  color: #000;
+  background-color: #FFF;
 }
 
 @media screen and (min-width: 1920px) {
@@ -154,5 +163,5 @@ button {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 70%, 85%, 100%;
-  filter: drop-shadow(0 0 200px #43bfb3f7);
+  filter: drop-shadow(0 0 400px #d7dfdeb3);
 }
