@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote {
   margin: 0;
   padding: 0;
 }
@@ -49,7 +49,7 @@ h1, h2, h3, span, .highlighted {
   font-weight: 600;
 }
 
-h2 {
+h1, h2 {
   font-size: 64px;
   margin-bottom: 25px;
 }
@@ -119,7 +119,7 @@ button {
 }
 
 .hero .hero-text {
-  max-width: 840px;
+  /* max-width: 840px; */
   position: relative
 }
 
@@ -140,7 +140,7 @@ button {
   font-size: 20px;
 }
 
-.hero h2 {
+.hero h1 {
   font-size: 64px;
   max-width: 660px;
 }
@@ -198,7 +198,7 @@ button {
   padding: 45px;
 }
 
-h4 {
+.service-items h4 {
   font-family: "Roboto Serif", serif;
   font-weight: 500;
   margin-top: 60px;
@@ -314,3 +314,88 @@ h4 {
   position: relative;
   top: -40px;
 }
+
+.showcase {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-bottom: 100px;
+}
+
+.showcase-column {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  flex: 0 1 660px;
+}
+
+.showcase-column:last-child .showcase-item:first-child {
+  display: flex;
+  justify-content: end;
+  margin-top: 100px;
+  margin-bottom: -50px;
+}
+
+.showcase-item img {
+  object-fit: cover;
+  /* aspect-ratio: 1.5; */
+  margin-bottom: 15px;
+}
+
+.showcase h3 {
+  margin-bottom: 10px;
+}
+
+.quotations {
+  margin: 0 auto;
+  text-align: center;
+  padding: 45px;
+  max-width: 1400px;
+  border-radius: 20px;
+  background-color: #F4F4F4;
+}
+
+.quotations img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.quotations blockquote > p {
+  margin: 35px auto;
+  max-width: 1200px;
+  font-size: 25px;
+}
+
+.slider circle {
+  stroke: #000;
+}
+
+.slider {
+  margin-top: 20px;
+}
+
+.slider span {
+  margin: 5px;
+}
+
+.slider span:hover circle,
+.slider span:hover path {
+  fill: #0C0C0C;
+  stroke: #FBFBFB;
+}
+
+.slider path {
+  stroke: #0C0C0C;
+}
+
+blockquote p, blockquote footer::first-line {
+  font-weight: 700;
+  font-family: "Roboto Serif", serif;
+}
+
+.quotations footer {
+  line-height: 1.5;
+}
+
+/* Стили подвала */
